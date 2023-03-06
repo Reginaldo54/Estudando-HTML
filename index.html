@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en"> <!--Tudo dentro desta tag é considerado html-->
+<head> <!--Cabeçario, tudo que precisa ser pre-definido antes de iniciar o site-->
+  <meta charset="UTF-8"> <!--Tipo de cadeia de caracteres que o site irá suportar (exibir)-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Tamanho da tela-->
+  <title>Documento foda</title> <!--Nome do site na aba do site-->
+</head>
+<body> <!--Corpo do html, oq será realmente será mostrado para o usuário-->
+   
+  <div id="start">
+    <h1>Um pouco do que aprendi até o momento sobre HTML</h1>
+     <hr>
+  </div>
+
+  <div id="menu do site:">
+    <h2>menu</h2>
+     <ul> <!--Lista não ordenada-->
+        <li> <!--Linha da lista-->
+          <a href="#about-me"> Sobre mim </a> <!--Contéudo do elemento-->
+        </li>
+        <li>
+          <a href="#elements"> Elementos </a>
+        </li>
+        <li>
+          <a href="#tags"> Tags </a>
+          <ol>
+            <li>
+              <a href="#explaining-tag"> O que seriam tags?</a>
+            </li>
+
+            <li>
+              <a href="#type-tag"> Tipos de tag</a>
+
+              <ul>
+                <li>
+                  <a href="#line-tag"> Tag de linha</a>
+                </li>
+
+                <li>
+                  <a href="#block-tag"> Tag de bloco</a>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li>
+          <a href="#atributes"> Atributos </a>
+            <ol>
+              <li>
+                <a href="#global-atribute"> Atributos globais</a>
+              </li>
+
+              <li>
+                <a href="#specific-atribute"> Atributos Específicos</a>                
+              </li>
+
+              <li>
+                <a href="#boolean-atribute"> Atributos Boleanos</a>
+              </li>
+            </ol>
+        </li>
+         <li>
+          <a href="#flow"> Fluxo </a>
+        </li>
+         <li>
+          <a href="#hierarchy"> Hierarquia </a>
+        </li>
+         <li>
+          <a href="#reference"> Referências </a>
+        </li>
+
+     </ul>
+   <hr>
+  </div>
+
+  <div id="about-me">
+   <h2>Sobre mim</h2>
+
+   <p>
+    Meu nome é Reginaldo, atualmente estou no segundo período na faculdade senac PE estudado o curso de <abbr title="Análise e Desenvolvimento de Sistemas"> ADS </abbr>, antes de entrar na faculdade, tudo o que eu fazia era apenas estudar programação de jogos, e ao entrar na faculdade senti um choque de realidade. 
+   </p>
+
+    <p>
+    Ao entrar na faculdade tudo era tão novo, e logo senti que está faculdade não era para mim, eu queria ser um desenvolvedor de games. Fiquei todo o primeiro periodo empurando com a barriga, seja nas materias da faculdade ou com a programação de jogos, praticamente fiquei confuso com meu caminho de vida. 
+   </p>
+
+   <p>
+    Apesar desse momento patético, no segundo semestre finalmente me encontrei durante uma aula sobre as linguagens front-end (que me fez novamente a ver o que eu realmente estava fazendo, não existe nada pior do que não entender oq todo o esforço empregado está servindo de algo). 
+   </p>
+
+    <p>
+      Resolvi deixar o desenvolvimento de jogos para após eu me formar, vou estar focando em programação web. (Uma vez que isso tudo me agregaria ao voltar a programar jogos no futuro).
+    </p>
+     <hr>
+  </div>
+
+  
+  <div id="tags">
+
+    <div id="explaining-tag">
+      <h2>Tags no HTML</h2>
+
+      <p>
+        O que seria uma tag ? É uma instrução que damos ao html, de como queremos que o contéudo dentro delas se pareça ou que tipo de função ela deve exibir dentro do site que estamos fazendo.
+      </p>
+
+      <p>
+        Elas são bastante usadas para principalmente estruturar e organizar o código html.
+      </p>
+
+      <p>
+        Existem varios tipos de tags e com isso vários usos, vou citar então alguns tipos mais usados no html, mas antes disso é preciso entender como é a estrutura de uma tag.
+      </p>
+
+    <pre>
+Anatómia: 
+Abrindo a tag -> &lt;p&gt;;
+Contéudo da tag -> é tudo aquilo que fica dentro, entre o ínicio e o fim da tag.
+Fechando a tag -> &lt;/p&gt;; 
+
+A junção desses 3, é denominada -> elemento. Vou entrar em detalhes sobre isso após
+falar um pouco mais sobre os tipos de tag.
+    </pre>
+
+    </div>
+
+    <div id="type-tag">
+      <h2>Tipos de Tags</h2>
+      <div id="block-tag">
+        <h3>Tag de bloco</h3>
+        <p>
+          Um bloco é a junção de linhas (duas ou mais), Tags de bloco são tags que criam um espaço (margem) entre os elementos anteriores definidos e os que vão ser criados abaixo deles.
+          Exemplo de tags de bloco: p, h1 ao h6, div.   
+        </p>
+      </div>
+
+      <div id="line-tag">
+        <h3>Tag de linha (inline)</h3>
+        <p>
+          São tags que não abre nenhum espaçamento entre elementos anteriores, tomando em conta que o html deixa todo o seu contéudo em forma de linha, ou seja, não importa o que eu escreva dentro do html, se eu não colocar uma tag que quebra linhas como br (break) ou uma tag de bloco, ele não adicionará nenhuma separação dos elementos, o contéudo do site iria ficar muito semelhante a uma redação.
+
+          Exemplo de tags de linha: a, b, strong, i, em, u. 
+        </p>
+      <hr>
+      </div>
+      
+      <div id="used-tag">
+        <h2>Tags mais usadas:</h2>
+
+          <h3>Tag p</h3>
+          <p>
+            É uma tag que cria um paragráfo dentro do html. Está tag é uma tag de bloco, ou seja que tem mais de uma linha dentro dela.
+          </p>
+
+          <h3>Tag a</h3>
+          <p>
+            É uma tag que cria links para outros sites ou para uma parte da mesma página! O 'a' vem de <b title="Âncora"> anchor </b>, está é uma tag de linha.
+          </p>
+
+          <h3>Tag b ou strong</h3>
+          <p>
+            São tags que possuem a mesma função, ou seja, deixa o contéudo dentro delas em negrito! Elas são tags de linha.
+          </p>
+
+          <h3>Tag em ou i</h3>
+          <p>
+            São tags que deixam a fonte do contéudo no formato itálico. São tags em linha!
+          </p>
+
+          <h3> Tag abbr</h3>
+          <p>
+            é uma tag que ajuda a abreviar uma sigla, ao colocar o mouse em cima da sigla iria mostrar o significado da sigla. Está é uma tag de linha.
+          </p>
+
+        <h3>As Tags h1 à h6</h3>
+        <p>
+          São tags de cabeçalho, ou melhor, para titulos e subtitulos, elas deixam o contéudo dentro delas em negrito e com um fonte maior que a fonte padrão! São tags de bloco.
+        </p>
+    
+      </div>
+    </div>
+
+    <blockquote>
+      <img width = "450px" src="./print_w3c.png" alt="Screenshoot do site w3schools, onde mostrar várias tags do html, este é um site de documentação de tags por assim dizer."> <br>
+      Para mais tags segue o <a href="https://www.w3schools.com/TAGS/default.asp" title="clique">link</a>.
+    </blockquote>
+        <hr>
+  </div>  
+
+  <div id="elements">
+    <h2>Elementos dentro do HTML</h2>
+    <p>
+      Então, o que seria um elemento? Um elemento é dito ser uma tag do html. <br>
+      E por isso existe um elemento chamado elemento vázio. É dado este nome devido a ele não ter um <abbr title="(não abre ou fecha a tag),">ínicio ou fim </abbr>. <br>
+      Exemplo De elementos vázios: Tag img, link, input. 
+    </p>
+     <hr>
+  </div>
+
+  <div id="flow">
+
+    <h2>Fluxo de elementos do HTML</h2>
+    <p>
+      Como bem sabemos todos os códigos em html tem uma sequencia, o titulo por exemplo, aparece antes do que seu contéudo. Logo os elementos criados primeiro executados/processados primeiro que os elementos abaixo deles. Tudo depende do posicionamento dos elementos.
+    </p>
+     <hr>
+  </div>
+
+  <div id="hierarchy">
+    <h2>Hierarquia dos elementos dentro do HTML</h2>
+    
+    <p>
+          Dentro do html é possível criar uma tag dentro de outra, isto é chamado de aninhamento de tags. Nesse aninhamento as tags dentro de outra são chamadas de tags filhas, e consequentemente a outra é chamada de tag mãe/pai.        
+    </p>
+
+    <p>
+       Esse aninhamento permite que durante a formatação dos elementos no CSS, o elemento seja facilmente localizado a apartir de seu "pai". 
+    </p>
+    
+<br>
+
+ <hr>
+  </div>
+
+
+  
+  <div id="atributes">
+    <h2>Tipos de atributos</h2>
+
+    <div id="global-atribute">
+      <h3>Atributos globais</h3>
+      <p>
+        São atributos genéricos, ou seja, podem ser usados em todos as tags existentes.
+        Exemplo: style, title, id, class, hidden.
+      </p>
+    </div>
+
+    <div id="specific-atribute">
+      <h3>Atributos Específicos</h3>
+      <p>
+        São atributos que apenas existem em determinadas tags, podendo até ser únicos.
+        Exemplo: type (da tag input), alt (da tag img), href (da tag a). 
+      </p>
+
+    </div>
+   
+    <div id="boolean-atribute">
+      <h3>Atributos boleano</h3>
+      <p>
+        Alguns atributos podem ser ativados ou desativados, eles são chamados de boleanos. Apesar de na maioria das vezes não serem atribuidos valor boleano, já que uma vez que ele é chamado, ele já está funcionando de acordo com sua função. <br> 
+        Ex: hidden, ele vai ocultar o elemento que chamou ele, mas pode-se colocar hidden = "false" (tornando o elemento visivel novamente...). Mas, ao não chamar o hidden, ele já é visivel, logo é desnecessário deixar ele como false.
+      </p>
+
+      <p>
+        Exemplo de tags boleanas: hidden, editablecontent
+      </p>
+    </div>
+     <hr>
+  </div>
+
+  <div id="reference">
+    <h2>Referências</h2>
+    <a href="https://www.w3schools.com/TAGS/default.asp">Local onde explica e dá exemplos práticos do uso das tags do html</a> <br>
+    <a href=""></a>
+  </div>
+ 
+</body>
+</html>
