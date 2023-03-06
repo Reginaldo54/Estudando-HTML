@@ -9,8 +9,15 @@
 <body> <!--Corpo do html, oq será realmente será mostrado para o usuário-->
    
   <div id="start">
+
+
     <h1>Um pouco do que aprendi até o momento sobre HTML</h1>
      <hr>
+  </div>
+
+  <div>
+    <small> <a href="#reference">&lt;ir para o fim do site</a> <sub>down</sub></small>
+    
   </div>
 
   <div id="menu do site:">
@@ -78,19 +85,10 @@
    <h2>Sobre mim</h2>
 
    <p>
-    Meu nome é Reginaldo, atualmente estou no segundo período na faculdade senac PE estudado o curso de <abbr title="Análise e Desenvolvimento de Sistemas"> ADS </abbr>, antes de entrar na faculdade, tudo o que eu fazia era apenas estudar programação de jogos, e ao entrar na faculdade senti um choque de realidade. 
+    Meu nome é Reginaldo e estou nos meus 21 anos, atualmente estou no segundo período na faculdade Senac PE no curso de <abbr title="Análise e Desenvolvimento de Sistemas"> <strong>ADS</strong></abbr>, antes de entrar na faculdade, tudo o que eu fazia era apenas estudar desenvolvimento de jogos, e ao entrar na faculdade senti um choque de realidade. 
    </p>
-
     <p>
-    Ao entrar na faculdade tudo era tão novo, e logo senti que está faculdade não era para mim, eu queria ser um desenvolvedor de games. Fiquei todo o primeiro periodo empurando com a barriga, seja nas materias da faculdade ou com a programação de jogos, praticamente fiquei confuso com meu caminho de vida. 
-   </p>
-
-   <p>
-    Apesar desse momento patético, no segundo semestre finalmente me encontrei durante uma aula sobre as linguagens front-end (que me fez novamente a ver o que eu realmente estava fazendo, não existe nada pior do que não entender oq todo o esforço empregado está servindo de algo). 
-   </p>
-
-    <p>
-      Resolvi deixar o desenvolvimento de jogos para após eu me formar, vou estar focando em programação web. (Uma vez que isso tudo me agregaria ao voltar a programar jogos no futuro).
+      Resolvi deixar o <del>programação</del>... desenvolvimento de jogos para após eu me formar, vou estar focando em programação web (Uma vez que isso tudo me agregaria conhecimento e me daria mais formas de entrar no mercado de trabalho).
     </p>
      <hr>
   </div>
@@ -107,9 +105,6 @@
 
       <p>
         Elas são bastante usadas para principalmente estruturar e organizar o código html.
-      </p>
-
-      <p>
         Existem varios tipos de tags e com isso vários usos, vou citar então alguns tipos mais usados no html, mas antes disso é preciso entender como é a estrutura de uma tag.
       </p>
 
@@ -131,53 +126,72 @@ falar um pouco mais sobre os tipos de tag.
         <h3>Tag de bloco</h3>
         <p>
           Um bloco é a junção de linhas (duas ou mais), Tags de bloco são tags que criam um espaço (margem) entre os elementos anteriores definidos e os que vão ser criados abaixo deles.
-          Exemplo de tags de bloco: p, h1 ao h6, div.   
+          <br><br>
+         <mark> Exemplo de tags de bloco: p, h1 ao h6, div.</mark>   
         </p>
       </div>
 
       <div id="line-tag">
         <h3>Tag de linha (inline)</h3>
         <p>
-          São tags que não abre nenhum espaçamento entre elementos anteriores, tomando em conta que o html deixa todo o seu contéudo em forma de linha, ou seja, não importa o que eu escreva dentro do html, se eu não colocar uma tag que quebra linhas como br (break) ou uma tag de bloco, ele não adicionará nenhuma separação dos elementos, o contéudo do site iria ficar muito semelhante a uma redação.
-
-          Exemplo de tags de linha: a, b, strong, i, em, u. 
+          São tags que não abre nenhum espaçamento entre elementos anteriores, tomando em conta que o html deixa todo o seu contéudo alinhado, ou seja, não importa o que eu escreva dentro do html, se eu não colocar uma tag que quebra linhas como br (break) ou uma tag de bloco, ele não adicionará nenhuma separação dos elementos, o contéudo do site iria ficar muito semelhante a uma redação, que não pula nenhuma linha.
+          <br><br>
+         <mark>Exemplo de tags de linha: a, b, strong, i, em, u. </mark> 
         </p>
       <hr>
       </div>
       
       <div id="used-tag">
-        <h2>Tags mais usadas:</h2>
+        <caption ><h2>Tags mais usadas:</h2></caption>
 
-          <h3>Tag p</h3>
-          <p>
-            É uma tag que cria um paragráfo dentro do html. Está tag é uma tag de bloco, ou seja que tem mais de uma linha dentro dela.
-          </p>
+        <table border="1px solid black">
+          <thead>
+            <tr>
+              <th colspan="1" scope="col">Tag</th>
+              <th colspan="1" scope="col">Função</th>
+              <th colspan="1" scope="col">Tipo</th>
+            </tr>
+          </thead>
+        
+          <tbody>
+             <tr>
+            <td align="center">p</td>
+            <td>É uma tag que cria um paragráfo dentro do html.</td>
+            <td>Bloco</td>
+          </tr>
 
-          <h3>Tag a</h3>
-          <p>
-            É uma tag que cria links para outros sites ou para uma parte da mesma página! O 'a' vem de <b title="Âncora"> anchor </b>, está é uma tag de linha.
-          </p>
+          <tr>
+            <td align="center">a</td>
+            <td> É uma tag que cria links para outros sites ou para uma parte da mesma página! O 'a' vem de <b title="Âncora"> anchor </b></td>
+            <td>Linha</td>
+          </tr>
 
-          <h3>Tag b ou strong</h3>
-          <p>
-            São tags que possuem a mesma função, ou seja, deixa o contéudo dentro delas em negrito! Elas são tags de linha.
-          </p>
+          <tr>
+            <td align="center"> b ou strong</td>
+            <td>Deixam o contéudo dentro delas em negrito</td>
+            <td>Linha</td>
+          </tr>
+          
+          <tr>
+            <td align="center">i ou em</td>
+            <td>São tags que deixam a fonte do contéudoo no formato itálico.</td>
+            <td>Linha</td>
+          </tr>
 
-          <h3>Tag em ou i</h3>
-          <p>
-            São tags que deixam a fonte do contéudo no formato itálico. São tags em linha!
-          </p>
+          <tr>
+            <td align="center">abbr</td>
+            <td>Abrevia em uma sigla, ao colocar o mouse em cima da sigla irá mostrar o significado da sigla</td>
+            <td>Linha</td>
+          </tr>
 
-          <h3> Tag abbr</h3>
-          <p>
-            é uma tag que ajuda a abreviar uma sigla, ao colocar o mouse em cima da sigla iria mostrar o significado da sigla. Está é uma tag de linha.
-          </p>
+          <tr>
+            <td align="center">h1 à h6</td>
+            <td>elas deixam o contéudo dentro delas em negrito e com um fonte maior que a fonte padrão!</td>
+            <td>Bloco</td>
+          </tr>
+          </tbody>
+        </table>
 
-        <h3>As Tags h1 à h6</h3>
-        <p>
-          São tags de cabeçalho, ou melhor, para titulos e subtitulos, elas deixam o contéudo dentro delas em negrito e com um fonte maior que a fonte padrão! São tags de bloco.
-        </p>
-    
       </div>
     </div>
 
@@ -259,11 +273,17 @@ falar um pouco mais sobre os tipos de tag.
      <hr>
   </div>
 
+  <div>
+    <small> <a href="#start">&lt;Voltar ao nicio </a> <sup>up</sup></small>
+    
+  </div>
+
   <div id="reference">
     <h2>Referências</h2>
-    <a href="https://www.w3schools.com/TAGS/default.asp">Local onde explica e dá exemplos práticos do uso das tags do html</a> <br>
-    <a href=""></a>
+    <a href="https://www.w3schools.com/TAGS/default.asp" target="_blank">Local onde explica e dá exemplos práticos do uso das tags do html</a> <br>
+   
   </div>
- 
+
+
 </body>
 </html>
